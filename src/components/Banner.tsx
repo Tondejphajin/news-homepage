@@ -4,9 +4,14 @@ export default function Banner() {
   return (
     <div>
       <img
-        src={banner.image}
+        src={banner.imageWeb}
         alt={banner.title}
-        className="h-[300px] w-[730px]"
+        className="hidden h-[300px] w-[730px] md:block"
+      />
+      <img
+        src={banner.imageMobile}
+        alt={banner.title}
+        className="h-[300px] w-[343px] md:hidden"
       />
       <div className="mt-[30px] flex justify-between">
         <div className="h-[182px] w-[350px] text-xl font-extrabold">
