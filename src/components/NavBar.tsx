@@ -5,19 +5,19 @@ export default function NavBar() {
     <nav className="flex items-center justify-between">
       <img src={logo} alt="logo" className="h-[39.9px] w-[64.09px]" />
       <ul className="flex gap-[40px] text-body text-gun-metal">
-        <li>
+        <li className="hover:text-light-vermillion">
           <a href="/">Home</a>
         </li>
-        <li>
+        <li className="hover:text-light-vermillion">
           <a href="/">New</a>
         </li>
-        <li>
+        <li className="hover:text-light-vermillion">
           <a href="/">Popular</a>
         </li>
-        <li>
+        <li className="hover:text-light-vermillion">
           <a href="/">Trending</a>
         </li>
-        <li>
+        <li className="hover:text-light-vermillion">
           <a href="/">Categories</a>
         </li>
       </ul>
