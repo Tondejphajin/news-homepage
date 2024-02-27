@@ -9,7 +9,11 @@ export default function NavBar() {
   return (
     <nav className="flex w-full min-w-[375px] items-center justify-between">
       {/* logo */}
-      <img src={logo} alt="logo" className="h-[39.9px] w-[64.09px]" />
+      <img
+        src={logo}
+        alt="logo"
+        className="ml-[16px] h-[28px] w-[45px] md:ml-0 md:h-[40px] md:w-[64px]"
+      />
 
       {/* Navigation Links */}
       <ul className={"hidden gap-[40px] text-body text-gun-metal md:flex"}>
@@ -31,7 +35,7 @@ export default function NavBar() {
       </ul>
 
       {/* Toggle Button, visible on small screens */}
-      <div className="md:hidden">
+      <div className="mr-[16px] md:hidden">
         <button
           onClick={() => {
             setIsMenuOpen(!isMenuOpen);
