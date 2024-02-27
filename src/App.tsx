@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <>
-      <div className="mx-auto mt-[89px] flex max-h-[1024px] max-w-[1110px] flex-col items-center justify-center">
+      <div className="mx-auto mt-[89px] flex max-w-[1110px] flex-col items-center justify-center">
         <NavBar></NavBar>
         <HeroSection></HeroSection>
         <FeatureSection></FeatureSection>
