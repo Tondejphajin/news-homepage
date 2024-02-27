@@ -2,7 +2,7 @@ import logo from "../assets/logo.svg";
 
 export default function NavBar() {
   return (
-    <nav className=" flex items-center justify-between">
+    <nav className="flex items-center justify-between">
       <img src={logo} alt="logo" className="h-[39.9px] w-[64.09px]" />
       <ul className="flex gap-[40px] text-body text-gun-metal">
         <li>
