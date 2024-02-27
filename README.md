@@ -20,7 +20,11 @@ pnpm install eslint-plugin-tailwindcss
 
 ```bash
 pnpm install eslint-config-prettier
-
+w
 .eslintrc.cjs
 "extends": ["prettier"]
+```
+
+```bash
+pnpm install prettier
 ```
