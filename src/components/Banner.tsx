@@ -6,15 +6,15 @@ export default function Banner() {
       <img
         src={banner.image}
         alt={banner.title}
-        className="w-[730px] h-[300px]"
+        className="h-[300px] w-[730px]"
       />
-      <div className="flex justify-between mt-[30px]">
-        <div className="font-extrabold w-[350px] h-[182px] text-xl">
+      <div className="mt-[30px] flex justify-between">
+        <div className="h-[182px] w-[350px] text-xl font-extrabold">
           {banner.title}
         </div>
-        <div className="flex flex-col w-[350px] h-[181px] ml-[30px] text-gun-metal text-body">
+        <div className="ml-[30px] flex h-[181px] w-[350px] flex-col text-body text-gun-metal">
           <div>{banner.description}</div>
-          <button className="bg-light-vermillion w-[185px] h-[48px] text-almost-white mt-[29px] font-bold text-[14px] leading-[24px] tracking-[4.38px]">
+          <button className="mt-[29px] h-[48px] w-[185px] bg-light-vermillion text-[14px] font-bold leading-[24px] tracking-[4.38px] text-almost-white">
             READ MORE
           </button>
         </div>
