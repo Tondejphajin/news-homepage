@@ -16,7 +16,7 @@ export default function NavBar() {
       />
 
       {/* Navigation Links */}
-      <ul className={"hidden gap-[40px] text-body text-gun-metal md:flex"}>
+      <ul className="hidden gap-[40px] text-body text-gun-metal md:flex">
         <li className="hover:text-light-vermillion">
           <a href="/">Home</a>
         </li>
@@ -41,7 +41,37 @@ export default function NavBar() {
             setIsMenuOpen(!isMenuOpen);
           }}
         >
-          {isMenuOpen ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
+          {isMenuOpen ? (
+            <div className="absolute left-0 top-0 size-full bg-dark-space-blue/50">
+              <div className="fixed right-0 top-0 h-full w-[256px] bg-almost-white shadow-lg">
+                <div className="absolute right-[35px] top-[27px]">
+                  <XIcon></XIcon>
+                </div>
+
+                <div className="relative top-[116.7px]">
+                  <ul className="ml-[24px] flex flex-col items-start gap-[24px] text-xs text-dark-space-blue">
+                    <li>
+                      <a href="/">Home</a>
+                    </li>
+                    <li>
+                      <a href="/">New</a>
+                    </li>
+                    <li>
+                      <a href="/">Popular</a>
+                    </li>
+                    <li>
+                      <a href="/">Trending</a>
+                    </li>
+                    <li>
+                      <a href="/">Categories</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <MenuIcon></MenuIcon>
+          )}
         </button>
       </div>
     </nav>
