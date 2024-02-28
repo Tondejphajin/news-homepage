@@ -18,7 +18,7 @@ export default function Banner() {
           {banner.title}
         </div>
         <div className="flex h-[181px] w-[350px] flex-col text-body text-gun-metal md:ml-[30px]">
-          <div className="mt-[16px]">{banner.description}</div>
+          <div className="mt-[16px] md:mt-0">{banner.description}</div>
           <button className="mt-[24px] h-[48px] w-[185px] bg-light-vermillion text-[14px] font-bold leading-[24px] tracking-[4.38px] text-almost-white hover:bg-dark-space-blue md:mt-[29px]">
             READ MORE
           </button>
