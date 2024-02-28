@@ -4,17 +4,22 @@ export default function Banner() {
   return (
     <div>
       <img
-        src={banner.image}
+        src={banner.imageWeb}
         alt={banner.title}
-        className="h-[300px] w-[730px]"
+        className="hidden h-[300px] w-[730px] md:block"
       />
-      <div className="mt-[30px] flex justify-between">
-        <div className="h-[182px] w-[350px] text-xl font-extrabold">
+      <img
+        src={banner.imageMobile}
+        alt={banner.title}
+        className="h-[300px] w-[343px] md:hidden"
+      />
+      <div className="mt-[24px] md:mt-[30px] md:flex md:justify-between">
+        <div className="h-[120px] w-[343px] text-l font-extra-bold md:h-[182px] md:w-[350px] md:text-xl">
           {banner.title}
         </div>
-        <div className="ml-[30px] flex h-[181px] w-[350px] flex-col text-body text-gun-metal">
-          <div>{banner.description}</div>
-          <button className="mt-[29px] h-[48px] w-[185px] bg-light-vermillion text-[14px] font-bold leading-[24px] tracking-[4.38px] text-almost-white hover:bg-dark-space-blue">
+        <div className="flex h-[181px] w-[350px] flex-col text-body text-gun-metal md:ml-[30px]">
+          <div className="mt-[16px] md:mt-0">{banner.description}</div>
+          <button className="mt-[24px] h-[48px] w-[185px] bg-light-vermillion text-[14px] font-bold leading-[24px] tracking-[4.38px] text-almost-white hover:bg-dark-space-blue md:mt-[29px]">
             READ MORE
           </button>
         </div>

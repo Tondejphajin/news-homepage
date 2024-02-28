@@ -3,7 +3,7 @@ import { featureArticles } from "../constants/featureArticles";
 
 export default function FeatureSection() {
   return (
-    <div className="mt-[71px] flex gap-[30px]">
+    <div className="mb-[80px] mt-[31px] md:mt-[71px] md:flex md:gap-[30px]">
       {featureArticles.map((article, index) => {
         return (
           <FeatureArticle

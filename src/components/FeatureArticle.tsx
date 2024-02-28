@@ -14,7 +14,7 @@ export default function FeatureArticle({
   alt,
 }: FeatureArticleProps) {
   return (
-    <div className="flex">
+    <div className="mt-[33px] flex">
       <img src={image} alt={alt} className="h-[127px] w-[100px]" />
       <div className="ml-[24px] flex h-[129px] w-[226px] flex-col">
         <div className="text-m font-bold text-silver">{"0" + number}</div>

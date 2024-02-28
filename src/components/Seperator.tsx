@@ -1,3 +1,3 @@
 export default function Seperator() {
-  return <div className="border-b border-[#5E607A]">ddd</div>;
+  return <div className="mt-[29px] border-b border-[#5E607A]"></div>;
 }
